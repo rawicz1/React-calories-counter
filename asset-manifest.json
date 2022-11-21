@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-calories-counter/static/css/main.be6ae87a.css",
+    "main.js": "/React-calories-counter/static/js/main.01875048.js",
+    "index.html": "/React-calories-counter/index.html",
+    "main.be6ae87a.css.map": "/React-calories-counter/static/css/main.be6ae87a.css.map",
+    "main.01875048.js.map": "/React-calories-counter/static/js/main.01875048.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be6ae87a.css",
+    "static/js/main.01875048.js"
+  ]
+}
