@@ -35,8 +35,13 @@ function App() {
     )
     mealRef.current.value =null
   }
-  
+  const reset2 = () => {
+    setCaloriesToday(0);
+    setMeals([])
+  }
+   
   const reset = () => {
+    // console.log('resetting')
     render(<Day count={caloriesToday}/>)
     setCaloriesToday(0);
     setMeals([])
@@ -51,7 +56,8 @@ function App() {
         <input type='number' ref={countRef} placeholder='kcal' />
         <br></br>
         <button className='add' onClick={addCaloriesToday} >Add</button>  
-        <div className='meals' ><p>Meals:</p><MealsList meals={meals} /> </div>     
+        <div className='meals' ><p>Meals:</p><MealsList meals={meals} /> </div>  
+        <button onClick={reset2}>Reset no adding day</button>  
         <button onClick={reset}>Reset</button>
         
         
