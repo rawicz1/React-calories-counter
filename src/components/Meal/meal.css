@@ -1,0 +1,11 @@
+hr{
+    color: rgb(77, 172, 255);
+}
+.mealAndCount{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    font-size: 0.8em;
+    
+}

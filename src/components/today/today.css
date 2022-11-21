@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dateAndCount{
+    border: 1px solid rgb(68, 121, 201);
+    width: 100%;
+    min-height: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-self: center; */
+    justify-content: space-around;
+}
+.date{
+    font-size: 0.5em;
+    align-self: flex-start;
+}
+.todayMain{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    min-height: 12em;
+    width: 100%
+}
+.countValue{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 10vh;
+    font-size: 2em;
+    
+    justify-content: center;
+}
+.meals{
+    
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
