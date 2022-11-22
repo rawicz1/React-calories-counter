@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/React-calories-counter/static/css/main.be6ae87a.css",
-    "main.js": "/React-calories-counter/static/js/main.a074776f.js",
+    "main.css": "/React-calories-counter/static/css/main.482d99a6.css",
+    "main.js": "/React-calories-counter/static/js/main.e3c3b786.js",
     "index.html": "/React-calories-counter/index.html",
-    "main.be6ae87a.css.map": "/React-calories-counter/static/css/main.be6ae87a.css.map",
-    "main.a074776f.js.map": "/React-calories-counter/static/js/main.a074776f.js.map"
+    "main.482d99a6.css.map": "/React-calories-counter/static/css/main.482d99a6.css.map",
+    "main.e3c3b786.js.map": "/React-calories-counter/static/js/main.e3c3b786.js.map"
   },
   "entrypoints": [
-    "static/css/main.be6ae87a.css",
-    "static/js/main.a074776f.js"
+    "static/css/main.482d99a6.css",
+    "static/js/main.e3c3b786.js"
   ]
 }
