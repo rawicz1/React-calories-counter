@@ -2,6 +2,7 @@ import React from "react";
 import Meal from "../Meal/meal";
 
 export default function MealsList({ meals }){
+    
     if (meals.length >5){
         console.log(`length = ${meals.length}`)
         // const element = document.querySelector('.meals');
@@ -12,7 +13,13 @@ export default function MealsList({ meals }){
         
         element.style.fontSize = 'small'})
       }
-    
+      else if (meals.length >=0){
+        meals.map(meal => {
+            const element = document.querySelector('.meals');
+          
+          element.style.fontSize = 'medium'})
+      }
+      
     return (
        
         meals.map(meal => {

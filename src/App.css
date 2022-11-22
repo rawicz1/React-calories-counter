@@ -39,6 +39,9 @@ button{
     font-size: 0.8em;
     
 }
+.reset{
+    width: 80%;
+}
 .add{
     background-color: rgb(77, 172, 255);
 }
