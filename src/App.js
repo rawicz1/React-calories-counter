@@ -6,16 +6,15 @@ import { v4 as uuidv4 } from 'uuid'
 import { render } from '@testing-library/react';
 import MealsList from '../src/components/MealsList/MealsList'
 
-let count;
 
 function App() {
   const [caloriesToday, setCaloriesToday] = useState(0)
   const [meals, setMeals] = useState([])
+  // const [fontSize, setFontSize] = ('2em')
   
   const countRef = useRef()
   const mealRef = useRef()
-  
-  count = caloriesToday;
+
   const addCaloriesToday = () => {
     const count = countRef.current.value    
     if(!count) {
@@ -35,14 +34,11 @@ function App() {
     )
     mealRef.current.value =null
   }
-  const reset2 = () => {
-    setCaloriesToday(0);
-    setMeals([])
-  }
+  // const changeFont = () => {
+  //   setFontSize('1em')
+  // }
    
-  const reset = () => {
-    // console.log('resetting')
-    render(<Day count={caloriesToday}/>)
+  const reset = () => {   
     setCaloriesToday(0);
     setMeals([])
   }
@@ -50,30 +46,19 @@ function App() {
     <div className="App">
       
         <Today  count={caloriesToday} meals={meals} />
-        <div className='input_fields' ></div>
-        <input type='text' ref={mealRef} placeholder='meal' />
+        <div className='input_fields' > <input type='text' ref={mealRef} placeholder='meal' />
        
         <input type='number' ref={countRef} placeholder='kcal' />
         <br></br>
-        <button className='add' onClick={addCaloriesToday} >Add</button>  
+        <button className='add' onClick={addCaloriesToday} >Add</button> </div>
+        
         <div className='meals' ><p>Meals:</p><MealsList meals={meals} /> </div>  
-        <button onClick={reset2}>Reset no adding day</button>  
-        <button onClick={reset}>Reset</button>
+         
+        <button className='reset' onClick={reset}>Reset</button>
         
         
     </div>
   );
 };
-function Day(){
-  const date = new Date()
-  const day = date.getDate()
-    const month =date.getMonth() + 1
-    const year = date.getFullYear()    
-  return(
-    <div className='prevDay'>
-     Day:   {day}. {month}. {year} Total count: {count}
-    </div>
-  )
-}
 
 export default App;
